@@ -1,0 +1,87 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+
+    background-image:url(banner.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+.menubar{
+    background-color: rgb(22, 109, 22);
+    text-align: center;
+}
+.menubar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menubar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    
+}
+.menubar ul li a
+{
+    text-decoration: none;
+color: #fff;
+}
+.active,.menubar ul li:hover
+{
+    background: #2bab0d;
+    border-radius: 3px;
+}
+.submenu{
+    display: none;
+}
+.menubar ul li:hover .submenu
+{
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menubar ul li:hover .submenu ul
+{
+    display: block;
+    margin: 10px;
+}
+.menubar ul li:hover .submenu ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menubar ul li:hover .submenu ul li:last-child
+{
+    border-bottom: none;
+}
+.menubar ul li:hover .submenu ul li a:hover
+{
+    color: #b2ff00;
+}
+.article{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(25vh);
+}
+.article h1{
+    font-size: 18px;
+    color: #0f0d0d;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    font-family: 'ARIAL';
+    font-style: italic;
+
+}
